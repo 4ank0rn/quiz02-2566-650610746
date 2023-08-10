@@ -26,10 +26,16 @@ export const Comment = ({
           </span>
           <br />
           <span style={{ color: "#E4E6EB" }}>{commentText}</span>
-          <div className="d-flex align-items-center gap-1">
-            <img src="/like.svg" width={20}></img>
-            <span style={{ color: "#B0B3B8" }}>{likeNum}</span>
-          </div>
+          {likeNum > 0 ? (
+            <div className="d-flex align-items-center gap-1">
+              <img src="/like.svg" width={20}></img>
+              <span style={{ color: "#B0B3B8" }}>
+                {likeNum > 0 ? likeNum : ""}
+              </span>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       {replies.map((reply) => (
