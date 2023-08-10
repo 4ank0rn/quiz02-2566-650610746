@@ -1,4 +1,4 @@
-export const PostOwner = ({ imgUrl, userName, post }) => {
+export const PostOwner = ({ userName, imgUrl, post, likeNum }) => {
   return (
     <div>
       <div className="vstack gap-3">
@@ -17,7 +17,7 @@ export const PostOwner = ({ imgUrl, userName, post }) => {
 
         <div className="d-flex align-items-center gap-1">
           <img src="/like.svg" width={20}></img>
-          <span style={{ color: "#B0B3B8" }}>100 คน</span>
+          <span style={{ color: "#B0B3B8" }}>{likeNum}</span>
         </div>
         <hr className="m-0 border" />
       </div>

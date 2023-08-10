@@ -17,9 +17,10 @@ export default function HomePage() {
       >
         {/* Post Owner Example*/}
         <PostOwner
-          userName=" Kankorn Chirachaihirun 650610746"
+          userName="Kankorn Chirachaihirun 650610746"
           imgUrl="/profileImages/img.jpg"
           post="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
+          likeNum="100 คน"
         />
 
         {/* Comment Example */}
